@@ -1,0 +1,16 @@
+$no=1; $total_harga_satuan = 0; $total_harga_jumlah = 0; $jmldata=mysql_num_rows($tampil);
+  $total_harga_satuan = 0;
+  $total_harga_jumlah = 0;
+  $jmldata=mysql_num_rows($tampil);
+
+	$total_harga_satuan += $r['harga'];
+	$total_harga_jumlah += $hargaa;
+
+				  	$jumlahtotal = format_rupiah($total_harga_satuan);
+				  	$jumlahtotal = format_rupiah($total_harga_jumlah);
+
+$pilih_upb = (isset($_SESSION['pilih_upb'])) ? "subdinas.username = '$_SESSION[pilih_upb]' and " : null ;
+
+					<a data-toggle="modal" role="button" href="#default-modall"><input type="submit" value="Filter Sumber Dana" class="btn btn-primary"></a>
+
+invesc.tanggal_pembelian like '$_SESSION[tahun]-%' and 
